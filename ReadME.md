@@ -21,3 +21,5 @@ Namaste JavaScript:   https://www.youtube.com/playlist?list=PLlasXeu85E9cQ32gLCv
 Advance JavaScript:   https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/
 
 Node Course:  			https://www.udemy.com/course/complete-nodejs-developer-zero-to-mastery/
+
+Book: https://eloquentjavascript.net/

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Database</title>
+</head>
+<body>
+  <div class="container my-5">
+    <h2>Recipes</h2>
+    <ul>
+      <li>Mushroom Pie</li>
+      <li>Mushroom Chat</li>
+    </ul>
+    <form>
+      <label for="recipe">Add a new recipe: </label>
+      <div class="input-group">
+        <input type="text" id="recipe" class="form-control" required>
+        <div class="input-group-append">
+          <input type="submit" class="btn btn-outline-secondary" value="add">
+        </div> 
+      </div>
+    </form>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDom_8Q8qqOm2Lb4C3q-YQA6r9bW9Ac1jI",
+
+      authDomain: "recipe-app-cf77e.firebaseapp.com",
+      databaseURL: "https://udemy-js-ab45b.firebaseio.com",
+      projectId: "recipe-app-cf77e",
+      storageBucket: "recipe-app-cf77e.appspot.com",
+      messagingSenderId: "605917022508",
+    };
+    firebase.initializeApp(config);
+    const db = firebase.firestore();  
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>

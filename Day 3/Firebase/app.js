@@ -4,7 +4,7 @@ const form = document.querySelector('form');
 
 const addRecipe = (recipe, id) => {
   const html = `
-  <div> <li data-id="${id}" > ${recipe.title} 
+  <div> <li data-id="${id}" > ${recipe.title}
   <button class="btn btn-danger btn-sm my-2"> Delete </button>
   </li> </div>
 
